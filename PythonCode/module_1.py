@@ -53,3 +53,11 @@ except ZeroDivisionError:
     print("zero is not a valid input")
 except:
     print("Some error in code or input, please check")
+
+def get_inverse(number):
+    assert(number!=0),'Input 0 as number!'
+    return 1/number
+
+num_inv=int(input("Enter a number to get the inverse: "))
+
+print(get_inverse(num_inv))
