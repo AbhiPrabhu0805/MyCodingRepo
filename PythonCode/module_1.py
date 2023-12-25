@@ -31,3 +31,15 @@ def recursive_factorial_function(number):
 
 
 print(recursive_factorial_function(4))
+
+def generator_number():
+    for i in range(4):
+        yield i
+
+generator=generator_number()
+print(next(generator))
+print(next(generator))
+print(next(generator))
+
+number_list=list(generator_number())
+print(number_list)
