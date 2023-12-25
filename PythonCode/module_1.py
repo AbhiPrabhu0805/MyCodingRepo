@@ -51,3 +51,5 @@ except ValueError:
     print("you did not provide a valid number")
 except ZeroDivisionError:
     print("zero is not a valid input")
+except:
+    print("Some error in code or input, please check")
