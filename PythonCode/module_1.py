@@ -24,3 +24,10 @@ print(dict)
 for i in dict.values():
     print(i)
 
+def recursive_factorial_function(number):
+    if number<=1:
+        return 1
+    return number * recursive_factorial_function(number-1)
+
+
+print(recursive_factorial_function(4))
