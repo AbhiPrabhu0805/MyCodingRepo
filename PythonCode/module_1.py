@@ -43,3 +43,11 @@ print(next(generator))
 
 number_list=list(generator_number())
 print(number_list)
+
+try:
+    value=int(input("Enter a number: "))
+    print('The inverse of', value, "is",1/value)
+except ValueError:
+    print("you did not provide a valid number")
+except ZeroDivisionError:
+    print("zero is not a valid input")
