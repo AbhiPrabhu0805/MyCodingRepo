@@ -50,3 +50,12 @@ print("adrain".isalpha())
 print("adrain".isupper())
 print("adrain".islower())
 print("adrain".isspace())  #Accepts new line character as space as well
+
+print(' '.join(["my","name","is","Abhimanyu"]))
+
+print(' '.join(("my","name","is","Abhimanyu")))
+#print(' '.join(("my","name"),("is","Abhimanyu")))
+
+text_line=' '.join(["my","name","is","Abhimanyu"])
+
+print(text_line.split())
