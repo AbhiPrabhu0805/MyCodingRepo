@@ -14,7 +14,7 @@ print(len(''' HI There
 
 text="Hi there"
 
-print(text)
+print(text[::-1])
 
 #del text
 #print(text)
@@ -59,3 +59,22 @@ print(' '.join(("my","name","is","Abhimanyu")))
 text_line=' '.join(["my","name","is","Abhimanyu"])
 
 print(text_line.split())
+
+print(sorted("321"))
+
+tmp=list("321")
+print(tmp)
+
+x='+'
+print(not x)
+
+header=2*'+-'+'+'
+plus=0
+for x in header:
+    if not x in header:
+        plus+=1
+print(plus)
+
+print(not 'xyz')
+
+print(list(123))

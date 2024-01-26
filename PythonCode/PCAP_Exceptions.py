@@ -67,5 +67,17 @@ print(AnimalValueError.__name__)
 
 anerr=AnimalValueError()
 
+print(type(ZeroDivisionError))
 
-print(anerr.__bases__)
+
+#print(anerr.__bases__)
+
+s = "test string"
+try:
+    s = s[:100]
+except Exception as exc:
+    print(exc)
+
+print(type(()))
+
+

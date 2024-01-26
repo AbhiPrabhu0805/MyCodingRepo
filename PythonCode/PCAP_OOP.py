@@ -130,3 +130,64 @@ print(Car.__bases__)
 print(Landvehicle.__bases__)
 
 print(Vehicle.__bases__)
+
+class Upper:
+    def __init__(self):
+        return 1
+        #return False #will fail as we cannot return boolean, onlu None in constructor
+
+#up=Upper()
+
+class Diamond:
+    pass
+
+class Adamant(Diamond):
+    pass
+
+class Gem(Diamond):
+    cnt=1
+    def __init__(self):
+        self.names="A"
+
+g=Gem()
+
+print(Gem.__bases__)
+print(Gem.__name__)
+print(Gem.__module__)
+print(Gem.__dict__)
+print(g.__dict__)
+print(hasattr(g,"names"))
+print(hasattr(Gem,"names"))
+print(getattr(g,"names"))
+print(g.__dict__)
+print(type(g).__name__)
+
+class A:
+    class_variable = 1
+
+    def __init__(self):
+        self.instance_variable_init = 2
+
+    def do(self):
+        self.instance_variable = 2
+
+class B(A):
+    pass
+
+
+o = B()
+o.do()
+print(o.class_variable, o.instance_variable)
+print(A.__dict__)
+print(o.__dict__)
+
+print(A.__module__)
+print(o.__module__)
+print(Gem.__bases__)
+print(Gem.__name__)
+
+a=1
+b=2
+c=1+1
+print(a is b)
+print(c is b)

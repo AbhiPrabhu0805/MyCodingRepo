@@ -67,7 +67,7 @@ import random
  
 def generate_tickets(ticket_count, max_number):
     list_to_return = random.sample(range(0, max_number), ticket_count)
-    return (list_to_return, random.sample(list_to_return, 1))
+    return list_to_return, random.sample(list_to_return, 1)
 
 
 print(generate_tickets(2,10))
@@ -77,3 +77,8 @@ import own_module ## modules stored in __pycache__
 print(sys.path) ##locations python checks for modules
 
 #__init__.py is no longer necessary for packages
+random.seed()
+print(random.choice("Abhimanyu"))
+print(random.choice("Abhimanyu"))
+print(random.sample("Abhimanyu",1))
+
